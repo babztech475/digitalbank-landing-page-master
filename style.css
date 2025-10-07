@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar ul li{
+    list-style: none;
+    display: inline;
+}
+
+ul li a{
+    text-decoration: none;
+    color: grey;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+ul li a:hover{
+    text-decoration:2px underline green;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    padding: 10px;
+}
+
+
+
+/* hero section */
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.hero-section div{
+    margin-top: 80px;
+    margin-left: 120px;
+}
+
+.hero-section div h1{
+    width: 25%;
+    font-size: x-large;
+}
+
+.hero-section div p{
+    width: 45%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    line-height: 1.5;
+    color: grey;
+}
+
+.hero-section img{
+    width: 600px;
+    height: 600px;
+}
+
+/* article */
+article{
+    background-color: whitesmoke;
+    padding: 80px;
+}
+
+.article-content{
+    display: flex;
+    gap: 30px;
+    padding-top:50px ;
+}
+
+.article-content p{
+    color: gray;
+    padding-top: 10px;
+}
+
+article .para{
+    width:45%;
+    color: grey;
+    padding-top: 30px;
+}
+
+/* header */
+header{
+    padding: 80px;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.main h1{
+    font-size: xx-large;
+}
+
+.main {
+    justify-content: center;
+}
+
+.main img{
+    width:250px ;
+    height:250px ;
+}
+
+.main h6{
+    color: gray;
+    padding: 10px;
+}
+
+.main a{
+    text-decoration: none;
+    color: black;
+}
+
+.main h4{
+    width: 210px;
+    padding: 10px;
+}
+
+.main p{
+    width: 210px;
+    color: gray;
+    margin-left: 10px;
+}
+
+.main div{
+    background-color: white;
+    box-shadow: 1px 20px 12px 1px rgba(0, 0, 0, 0.2)
+}
+
+.footer{
+    background-color: rgb(35, 20, 78);
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer ul li{
+    list-style: none;
+    /* display: inline; */
+}
+
+.footer div button{
+    background-color: aqua;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.footer div button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav{
+        display: none;
+    }    
+
+    .hero-section{
+        flex-direction: column;
+    }
+
+    .article-content{
+        flex-direction: column;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
